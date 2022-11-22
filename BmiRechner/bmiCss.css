@@ -18,9 +18,8 @@ div.rechner {
     width: fit-content;
 }
 
-html {
+body {
     border: black solid;
     padding-right: 20px;
     width: fit-content;
-    align-content: center;
 }

@@ -6,6 +6,9 @@
     <meta name="auther" content="So nen Dude">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BmiRechner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="scriptBmi.js" defer></script>
 </head>
 
 <body>
@@ -34,26 +37,25 @@
     <p>
         Bitte geben sie ihre Körpergröße ein
     </p>
-    <p>
-        Körpergröße in cm: <input name="groese" type="text">
-    </p>
+    <label for="groesseInput">Körpergröße in cm: </label>
+    <input id="groesseInput" type="text">
+
     <p>
         Bitte geben sie Ihr Körpergewicht ein:
     </p>
-    <p>
-        Körpergewicht in Kg: <input name="gewicht" type="text">
-    </p>
-    <button name="rechnen" onclick="ScriptBmi()" type="button">
+    <label for="gewichtInput"> Körpergewicht in Kg:</label>
+    <input id="gewichtInput" type="text">
+
+    <br>
+    <button id="rechnen" type="button">
         BMI berechnen
     </button>
-    <br>
-    <br>
-    <strong>Ihr Body-Mass-Index beträgt:</strong>
-    <br>
-    <br>
-    <strong>BMI-Wert:</strong>
-    <output></output>
-    <br>
+    <h3 class="result"></h3>
+    <p id="result-statement"></p>
+    <div>
+        <label for="bmiErmittelt">Ihr BMI-Wert:</label>
+        <output id="bmiErmittelt"></output>
+    </div>
 </div>
 <br>
 <h3>
